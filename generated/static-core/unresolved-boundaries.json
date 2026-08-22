@@ -1,0 +1,12 @@
+{
+  "entries": [],
+  "entry_count": 0,
+  "mapper_state_contract": {
+    "event_count": 168,
+    "policy": "V13 branch-refined mapper-aware fixed point; every bank-window target is source-proved under exact R6/R7 state or a finite transaction relation; invalid state traps"
+  },
+  "milestone": "V13",
+  "policy": "V13 has zero unresolved construction boundaries. Any dispatcher miss, rejected finite selector, excluded inline-data fallthrough, or invalid mapper state traps fail-closed.",
+  "schema": 1,
+  "source": "generated/v13/unresolved-v13.json"
+}

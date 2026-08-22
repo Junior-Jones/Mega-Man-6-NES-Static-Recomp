@@ -1,0 +1,1016 @@
+{
+  "accepted_instruction_count": 25156,
+  "accepted_physical_banks": [
+    41,
+    48,
+    49,
+    52,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "dispatcher_policy": "physical bank + CPU PC only; every miss calls mm6_trap_dispatch_miss",
+  "edge_count": 32511,
+  "exact_arguments": [
+    "--project-root",
+    ".",
+    "--rom",
+    "/mnt/data/MM6_V13_Workspace/03_Test_Media/Mega Man 6 (USA).nes",
+    "--graph",
+    "generated/v13/control-flow-graph.json",
+    "--unresolved",
+    "generated/v13/unresolved-v13.json",
+    "--mapper",
+    "generated/v10/mapper-closure.json",
+    "--output",
+    "generated/v13/static-core",
+    "--pin-receipt",
+    "receipts/generation/v13-source-pin-before-command-final-generation.json"
+  ],
+  "external_rom_identity": {
+    "embedded_in_generated_tree": false,
+    "file_sha256": "86e069792addf21322355c245a0b155ba74e123b4a3eb9cd347175444569d122",
+    "payload_sha256": "2037babe50fed7a13b6f6559914cb81497245c9477592e6f8da183df09a3609a"
+  },
+  "generator_source_sha256": "e3d7b4ea8df963cc1ede377b4928fb34ce104946b337ecf23d31251f8d3c31f7",
+  "generator_version": "1.0.0-v13",
+  "input_hashes": {
+    "board_contract_config": "cb2178284c33687afc87e1429e99250a0a89550c5f0bec4b6cfdb351d1c52812",
+    "expected_rom_config": "655be4a268784d7891562637abca38e23f9797f490dc52dfbe117cd3e319c8c5",
+    "generator_source": "e3d7b4ea8df963cc1ede377b4928fb34ce104946b337ecf23d31251f8d3c31f7",
+    "source_pin_receipt": "519722b8105f0870245d30d471bce91a659fe497fec9b05a8d811c18b7d57dec",
+    "source_pins": "4e1793fb10f9378be4ec4a677ce85a45641486236db92c8678f7e52e392a95fa",
+    "v10_control_flow_graph": "ffa36124ed6d2e26d54337ca19a45f3caee4896a4296f1ead40814cb61135c3c",
+    "v10_mapper_closure": "bebb549e79678a897e23e608af8eb168d3cef52b2ce0e8ccc68d1af7ad3f29ad",
+    "v10_unresolved": "9dfa0bc685068f4f84c1a884542395a5d1851d9216238c19b0b793eafcb1b47e"
+  },
+  "milestone": "V13",
+  "ordered_bus_plan_policy": "every generated physical instruction context has an explicit ordered bus-cycle/access plan; opcode-cycle byte values never select runtime semantics",
+  "per_physical_bank_identity_counts": {
+    "0": 0,
+    "1": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "2": 0,
+    "20": 0,
+    "21": 0,
+    "22": 0,
+    "23": 0,
+    "24": 0,
+    "25": 0,
+    "26": 0,
+    "27": 0,
+    "28": 0,
+    "29": 0,
+    "3": 0,
+    "30": 0,
+    "31": 0,
+    "32": 0,
+    "33": 0,
+    "34": 0,
+    "35": 0,
+    "36": 0,
+    "37": 0,
+    "38": 0,
+    "39": 0,
+    "4": 0,
+    "40": 0,
+    "41": 2885,
+    "42": 0,
+    "43": 0,
+    "44": 0,
+    "45": 0,
+    "46": 0,
+    "47": 0,
+    "48": 3042,
+    "49": 2952,
+    "5": 0,
+    "50": 0,
+    "51": 0,
+    "52": 1117,
+    "53": 0,
+    "54": 0,
+    "55": 0,
+    "56": 3160,
+    "57": 2333,
+    "58": 299,
+    "59": 2958,
+    "6": 0,
+    "60": 472,
+    "61": 149,
+    "62": 3512,
+    "63": 2277,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "runtime_opcode_fetch_dispatch": false,
+  "schema": 1,
+  "specialized_opcode_form_count": 127,
+  "specialized_opcode_forms": [
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_00_BRK_Imp",
+      "identity_count": 2,
+      "mnemonic": "BRK",
+      "opcode": "0x00"
+    },
+    {
+      "addressing_mode": "None",
+      "helper": "mm6_exec_op_02_STP_None",
+      "identity_count": 2,
+      "mnemonic": "STP",
+      "opcode": "0x02"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_05_ORA_Zero",
+      "identity_count": 42,
+      "mnemonic": "ORA",
+      "opcode": "0x05"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_06_ASL_Zero",
+      "identity_count": 17,
+      "mnemonic": "ASL",
+      "opcode": "0x06"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_07_SLO_Zero",
+      "identity_count": 2,
+      "mnemonic": "SLO",
+      "opcode": "0x07"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_08_PHP_Imp",
+      "identity_count": 4,
+      "mnemonic": "PHP",
+      "opcode": "0x08"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_09_ORA_Imm",
+      "identity_count": 58,
+      "mnemonic": "ORA",
+      "opcode": "0x09"
+    },
+    {
+      "addressing_mode": "Acc",
+      "helper": "mm6_exec_op_0A_ASL_Acc",
+      "identity_count": 98,
+      "mnemonic": "ASL",
+      "opcode": "0x0A"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_0D_ORA_Abs",
+      "identity_count": 14,
+      "mnemonic": "ORA",
+      "opcode": "0x0D"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_10_BPL_Rel",
+      "identity_count": 181,
+      "mnemonic": "BPL",
+      "opcode": "0x10"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_11_ORA_IndY",
+      "identity_count": 3,
+      "mnemonic": "ORA",
+      "opcode": "0x11"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_15_ORA_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "ORA",
+      "opcode": "0x15"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_18_CLC_Imp",
+      "identity_count": 273,
+      "mnemonic": "CLC",
+      "opcode": "0x18"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_19_ORA_AbsY",
+      "identity_count": 5,
+      "mnemonic": "ORA",
+      "opcode": "0x19"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_1D_ORA_AbsX",
+      "identity_count": 10,
+      "mnemonic": "ORA",
+      "opcode": "0x1D"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_1E_ASL_AbsXW",
+      "identity_count": 8,
+      "mnemonic": "ASL",
+      "opcode": "0x1E"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_20_JSR_Abs",
+      "identity_count": 3652,
+      "mnemonic": "JSR",
+      "opcode": "0x20"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_24_BIT_Zero",
+      "identity_count": 1,
+      "mnemonic": "BIT",
+      "opcode": "0x24"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_25_AND_Zero",
+      "identity_count": 11,
+      "mnemonic": "AND",
+      "opcode": "0x25"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_26_ROL_Zero",
+      "identity_count": 28,
+      "mnemonic": "ROL",
+      "opcode": "0x26"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_28_PLP_Imp",
+      "identity_count": 6,
+      "mnemonic": "PLP",
+      "opcode": "0x28"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_29_AND_Imm",
+      "identity_count": 527,
+      "mnemonic": "AND",
+      "opcode": "0x29"
+    },
+    {
+      "addressing_mode": "Acc",
+      "helper": "mm6_exec_op_2A_ROL_Acc",
+      "identity_count": 25,
+      "mnemonic": "ROL",
+      "opcode": "0x2A"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_2B_ANC_Imm",
+      "identity_count": 3,
+      "mnemonic": "ANC",
+      "opcode": "0x2B"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_2C_BIT_Abs",
+      "identity_count": 17,
+      "mnemonic": "BIT",
+      "opcode": "0x2C"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_2D_AND_Abs",
+      "identity_count": 3,
+      "mnemonic": "AND",
+      "opcode": "0x2D"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_30_BMI_Rel",
+      "identity_count": 100,
+      "mnemonic": "BMI",
+      "opcode": "0x30"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_35_AND_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "AND",
+      "opcode": "0x35"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_36_ROL_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "ROL",
+      "opcode": "0x36"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_38_SEC_Imp",
+      "identity_count": 178,
+      "mnemonic": "SEC",
+      "opcode": "0x38"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_3D_AND_AbsX",
+      "identity_count": 1,
+      "mnemonic": "AND",
+      "opcode": "0x3D"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_3E_ROL_AbsXW",
+      "identity_count": 8,
+      "mnemonic": "ROL",
+      "opcode": "0x3E"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_40_RTI_Imp",
+      "identity_count": 2,
+      "mnemonic": "RTI",
+      "opcode": "0x40"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_45_EOR_Zero",
+      "identity_count": 8,
+      "mnemonic": "EOR",
+      "opcode": "0x45"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_46_LSR_Zero",
+      "identity_count": 26,
+      "mnemonic": "LSR",
+      "opcode": "0x46"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_48_PHA_Imp",
+      "identity_count": 104,
+      "mnemonic": "PHA",
+      "opcode": "0x48"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_49_EOR_Imm",
+      "identity_count": 141,
+      "mnemonic": "EOR",
+      "opcode": "0x49"
+    },
+    {
+      "addressing_mode": "Acc",
+      "helper": "mm6_exec_op_4A_LSR_Acc",
+      "identity_count": 215,
+      "mnemonic": "LSR",
+      "opcode": "0x4A"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_4C_JMP_Abs",
+      "identity_count": 697,
+      "mnemonic": "JMP",
+      "opcode": "0x4C"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_4E_LSR_Abs",
+      "identity_count": 14,
+      "mnemonic": "LSR",
+      "opcode": "0x4E"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_51_EOR_IndY",
+      "identity_count": 8,
+      "mnemonic": "EOR",
+      "opcode": "0x51"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_58_CLI_Imp",
+      "identity_count": 1,
+      "mnemonic": "CLI",
+      "opcode": "0x58"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_5D_EOR_AbsX",
+      "identity_count": 1,
+      "mnemonic": "EOR",
+      "opcode": "0x5D"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_5E_LSR_AbsXW",
+      "identity_count": 15,
+      "mnemonic": "LSR",
+      "opcode": "0x5E"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_60_RTS_Imp",
+      "identity_count": 422,
+      "mnemonic": "RTS",
+      "opcode": "0x60"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_65_ADC_Zero",
+      "identity_count": 77,
+      "mnemonic": "ADC",
+      "opcode": "0x65"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_66_ROR_Zero",
+      "identity_count": 18,
+      "mnemonic": "ROR",
+      "opcode": "0x66"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_68_PLA_Imp",
+      "identity_count": 125,
+      "mnemonic": "PLA",
+      "opcode": "0x68"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_69_ADC_Imm",
+      "identity_count": 175,
+      "mnemonic": "ADC",
+      "opcode": "0x69"
+    },
+    {
+      "addressing_mode": "Acc",
+      "helper": "mm6_exec_op_6A_ROR_Acc",
+      "identity_count": 19,
+      "mnemonic": "ROR",
+      "opcode": "0x6A"
+    },
+    {
+      "addressing_mode": "Ind",
+      "helper": "mm6_exec_op_6C_JMP_Ind",
+      "identity_count": 31,
+      "mnemonic": "JMP",
+      "opcode": "0x6C"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_6D_ADC_Abs",
+      "identity_count": 45,
+      "mnemonic": "ADC",
+      "opcode": "0x6D"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_6E_ROR_Abs",
+      "identity_count": 1,
+      "mnemonic": "ROR",
+      "opcode": "0x6E"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_71_ADC_IndY",
+      "identity_count": 1,
+      "mnemonic": "ADC",
+      "opcode": "0x71"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_76_ROR_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "ROR",
+      "opcode": "0x76"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_78_SEI_Imp",
+      "identity_count": 2,
+      "mnemonic": "SEI",
+      "opcode": "0x78"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_79_ADC_AbsY",
+      "identity_count": 28,
+      "mnemonic": "ADC",
+      "opcode": "0x79"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_7D_ADC_AbsX",
+      "identity_count": 30,
+      "mnemonic": "ADC",
+      "opcode": "0x7D"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_84_STY_Zero",
+      "identity_count": 79,
+      "mnemonic": "STY",
+      "opcode": "0x84"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_85_STA_Zero",
+      "identity_count": 2180,
+      "mnemonic": "STA",
+      "opcode": "0x85"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_86_STX_Zero",
+      "identity_count": 57,
+      "mnemonic": "STX",
+      "opcode": "0x86"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_88_DEY_Imp",
+      "identity_count": 64,
+      "mnemonic": "DEY",
+      "opcode": "0x88"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_8A_TXA_Imp",
+      "identity_count": 68,
+      "mnemonic": "TXA",
+      "opcode": "0x8A"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_8C_STY_Abs",
+      "identity_count": 35,
+      "mnemonic": "STY",
+      "opcode": "0x8C"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_8D_STA_Abs",
+      "identity_count": 1206,
+      "mnemonic": "STA",
+      "opcode": "0x8D"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_8E_STX_Abs",
+      "identity_count": 20,
+      "mnemonic": "STX",
+      "opcode": "0x8E"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_90_BCC_Rel",
+      "identity_count": 181,
+      "mnemonic": "BCC",
+      "opcode": "0x90"
+    },
+    {
+      "addressing_mode": "IndYW",
+      "helper": "mm6_exec_op_91_STA_IndYW",
+      "identity_count": 1,
+      "mnemonic": "STA",
+      "opcode": "0x91"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_94_STY_ZeroX",
+      "identity_count": 2,
+      "mnemonic": "STY",
+      "opcode": "0x94"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_95_STA_ZeroX",
+      "identity_count": 10,
+      "mnemonic": "STA",
+      "opcode": "0x95"
+    },
+    {
+      "addressing_mode": "ZeroY",
+      "helper": "mm6_exec_op_96_STX_ZeroY",
+      "identity_count": 3,
+      "mnemonic": "STX",
+      "opcode": "0x96"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_98_TYA_Imp",
+      "identity_count": 100,
+      "mnemonic": "TYA",
+      "opcode": "0x98"
+    },
+    {
+      "addressing_mode": "AbsYW",
+      "helper": "mm6_exec_op_99_STA_AbsYW",
+      "identity_count": 98,
+      "mnemonic": "STA",
+      "opcode": "0x99"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_9A_TXS_Imp",
+      "identity_count": 8,
+      "mnemonic": "TXS",
+      "opcode": "0x9A"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_9D_STA_AbsXW",
+      "identity_count": 1501,
+      "mnemonic": "STA",
+      "opcode": "0x9D"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_A0_LDY_Imm",
+      "identity_count": 861,
+      "mnemonic": "LDY",
+      "opcode": "0xA0"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_A2_LDX_Imm",
+      "identity_count": 259,
+      "mnemonic": "LDX",
+      "opcode": "0xA2"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_A4_LDY_Zero",
+      "identity_count": 201,
+      "mnemonic": "LDY",
+      "opcode": "0xA4"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_A5_LDA_Zero",
+      "identity_count": 1061,
+      "mnemonic": "LDA",
+      "opcode": "0xA5"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_A6_LDX_Zero",
+      "identity_count": 212,
+      "mnemonic": "LDX",
+      "opcode": "0xA6"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_A8_TAY_Imp",
+      "identity_count": 258,
+      "mnemonic": "TAY",
+      "opcode": "0xA8"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_A9_LDA_Imm",
+      "identity_count": 3008,
+      "mnemonic": "LDA",
+      "opcode": "0xA9"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_AA_TAX_Imp",
+      "identity_count": 74,
+      "mnemonic": "TAX",
+      "opcode": "0xAA"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_AC_LDY_Abs",
+      "identity_count": 89,
+      "mnemonic": "LDY",
+      "opcode": "0xAC"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_AD_LDA_Abs",
+      "identity_count": 610,
+      "mnemonic": "LDA",
+      "opcode": "0xAD"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_AE_LDX_Abs",
+      "identity_count": 18,
+      "mnemonic": "LDX",
+      "opcode": "0xAE"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_B0_BCS_Rel",
+      "identity_count": 224,
+      "mnemonic": "BCS",
+      "opcode": "0xB0"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_B1_LDA_IndY",
+      "identity_count": 135,
+      "mnemonic": "LDA",
+      "opcode": "0xB1"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_B4_LDY_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "LDY",
+      "opcode": "0xB4"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_B5_LDA_ZeroX",
+      "identity_count": 9,
+      "mnemonic": "LDA",
+      "opcode": "0xB5"
+    },
+    {
+      "addressing_mode": "ZeroY",
+      "helper": "mm6_exec_op_B6_LDX_ZeroY",
+      "identity_count": 2,
+      "mnemonic": "LDX",
+      "opcode": "0xB6"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_B9_LDA_AbsY",
+      "identity_count": 615,
+      "mnemonic": "LDA",
+      "opcode": "0xB9"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_BA_TSX_Imp",
+      "identity_count": 7,
+      "mnemonic": "TSX",
+      "opcode": "0xBA"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_BC_LDY_AbsX",
+      "identity_count": 84,
+      "mnemonic": "LDY",
+      "opcode": "0xBC"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_BD_LDA_AbsX",
+      "identity_count": 750,
+      "mnemonic": "LDA",
+      "opcode": "0xBD"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_BE_LDX_AbsY",
+      "identity_count": 1,
+      "mnemonic": "LDX",
+      "opcode": "0xBE"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_C0_CPY_Imm",
+      "identity_count": 31,
+      "mnemonic": "CPY",
+      "opcode": "0xC0"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_C4_CPY_Zero",
+      "identity_count": 3,
+      "mnemonic": "CPY",
+      "opcode": "0xC4"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_C5_CMP_Zero",
+      "identity_count": 35,
+      "mnemonic": "CMP",
+      "opcode": "0xC5"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_C6_DEC_Zero",
+      "identity_count": 61,
+      "mnemonic": "DEC",
+      "opcode": "0xC6"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_C8_INY_Imp",
+      "identity_count": 132,
+      "mnemonic": "INY",
+      "opcode": "0xC8"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_C9_CMP_Imm",
+      "identity_count": 393,
+      "mnemonic": "CMP",
+      "opcode": "0xC9"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_CA_DEX_Imp",
+      "identity_count": 69,
+      "mnemonic": "DEX",
+      "opcode": "0xCA"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_CC_CPY_Abs",
+      "identity_count": 2,
+      "mnemonic": "CPY",
+      "opcode": "0xCC"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_CD_CMP_Abs",
+      "identity_count": 32,
+      "mnemonic": "CMP",
+      "opcode": "0xCD"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_CE_DEC_Abs",
+      "identity_count": 135,
+      "mnemonic": "DEC",
+      "opcode": "0xCE"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_D0_BNE_Rel",
+      "identity_count": 1023,
+      "mnemonic": "BNE",
+      "opcode": "0xD0"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_D1_CMP_IndY",
+      "identity_count": 7,
+      "mnemonic": "CMP",
+      "opcode": "0xD1"
+    },
+    {
+      "addressing_mode": "ZeroX",
+      "helper": "mm6_exec_op_D6_DEC_ZeroX",
+      "identity_count": 1,
+      "mnemonic": "DEC",
+      "opcode": "0xD6"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_D8_CLD_Imp",
+      "identity_count": 2,
+      "mnemonic": "CLD",
+      "opcode": "0xD8"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_D9_CMP_AbsY",
+      "identity_count": 7,
+      "mnemonic": "CMP",
+      "opcode": "0xD9"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_DD_CMP_AbsX",
+      "identity_count": 31,
+      "mnemonic": "CMP",
+      "opcode": "0xDD"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_DE_DEC_AbsXW",
+      "identity_count": 253,
+      "mnemonic": "DEC",
+      "opcode": "0xDE"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_E0_CPX_Imm",
+      "identity_count": 17,
+      "mnemonic": "CPX",
+      "opcode": "0xE0"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_E4_CPX_Zero",
+      "identity_count": 6,
+      "mnemonic": "CPX",
+      "opcode": "0xE4"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_E5_SBC_Zero",
+      "identity_count": 56,
+      "mnemonic": "SBC",
+      "opcode": "0xE5"
+    },
+    {
+      "addressing_mode": "Zero",
+      "helper": "mm6_exec_op_E6_INC_Zero",
+      "identity_count": 116,
+      "mnemonic": "INC",
+      "opcode": "0xE6"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_E8_INX_Imp",
+      "identity_count": 105,
+      "mnemonic": "INX",
+      "opcode": "0xE8"
+    },
+    {
+      "addressing_mode": "Imm",
+      "helper": "mm6_exec_op_E9_SBC_Imm",
+      "identity_count": 49,
+      "mnemonic": "SBC",
+      "opcode": "0xE9"
+    },
+    {
+      "addressing_mode": "Imp",
+      "helper": "mm6_exec_op_EA_NOP_Imp",
+      "identity_count": 69,
+      "mnemonic": "NOP",
+      "opcode": "0xEA"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_ED_SBC_Abs",
+      "identity_count": 36,
+      "mnemonic": "SBC",
+      "opcode": "0xED"
+    },
+    {
+      "addressing_mode": "Abs",
+      "helper": "mm6_exec_op_EE_INC_Abs",
+      "identity_count": 94,
+      "mnemonic": "INC",
+      "opcode": "0xEE"
+    },
+    {
+      "addressing_mode": "Rel",
+      "helper": "mm6_exec_op_F0_BEQ_Rel",
+      "identity_count": 705,
+      "mnemonic": "BEQ",
+      "opcode": "0xF0"
+    },
+    {
+      "addressing_mode": "IndY",
+      "helper": "mm6_exec_op_F1_SBC_IndY",
+      "identity_count": 4,
+      "mnemonic": "SBC",
+      "opcode": "0xF1"
+    },
+    {
+      "addressing_mode": "AbsY",
+      "helper": "mm6_exec_op_F9_SBC_AbsY",
+      "identity_count": 16,
+      "mnemonic": "SBC",
+      "opcode": "0xF9"
+    },
+    {
+      "addressing_mode": "AbsX",
+      "helper": "mm6_exec_op_FD_SBC_AbsX",
+      "identity_count": 22,
+      "mnemonic": "SBC",
+      "opcode": "0xFD"
+    },
+    {
+      "addressing_mode": "AbsXW",
+      "helper": "mm6_exec_op_FE_INC_AbsXW",
+      "identity_count": 63,
+      "mnemonic": "INC",
+      "opcode": "0xFE"
+    }
+  ],
+  "unresolved_boundary_count": 0,
+  "unresolved_policy": "V13 unresolved count is zero; all invalid finite-domain selections and static-identity misses trap fail-closed"
+}

@@ -1,0 +1,100 @@
+{
+  "files": [
+    {
+      "bytes": 713,
+      "path": "README.md",
+      "sha256": "8f26a296703e5c6d5620096a18885f2820588a8058de617afb2d909431a531b7"
+    },
+    {
+      "bytes": 12937,
+      "path": "include/mm6_v05_contract.h",
+      "sha256": "2d09ec1e4489e11f518ef947005d7e81dc81df1c23a70b6a08823bc200cad21d"
+    },
+    {
+      "bytes": 2082965,
+      "path": "src/bank_41.cpp",
+      "sha256": "aa89c810242ba6ae7359468a0d3b76dd50b016b033eda2a080d98b528b372168"
+    },
+    {
+      "bytes": 2188861,
+      "path": "src/bank_48.cpp",
+      "sha256": "bf83d77a1921a127d592eb8a2e46746618be57782f7779a55d0ebea5897761ff"
+    },
+    {
+      "bytes": 2097539,
+      "path": "src/bank_49.cpp",
+      "sha256": "0a16721bdc11c1d4e7a228cd8733f8fe0c31798f291f7cc786f7ac0eaff90c56"
+    },
+    {
+      "bytes": 788369,
+      "path": "src/bank_52.cpp",
+      "sha256": "aae4480c55d9bc797dc8206b7e2113b992de4409202b6fc0699ffc5a91f7d328"
+    },
+    {
+      "bytes": 2232280,
+      "path": "src/bank_56.cpp",
+      "sha256": "db9097ab0e0e69b59b051e75cdc9627f428f3cc7b56c27ce02624108392f0652"
+    },
+    {
+      "bytes": 1653795,
+      "path": "src/bank_57.cpp",
+      "sha256": "f2ac4a52339a4c2b5f62673782e10dfe616497814eb40ce4acd122b9599f7d40"
+    },
+    {
+      "bytes": 213529,
+      "path": "src/bank_58.cpp",
+      "sha256": "228ca878b795bbe001d8d465b0678dbd3db51b726f387b4409b1992373d7b374"
+    },
+    {
+      "bytes": 2110225,
+      "path": "src/bank_59.cpp",
+      "sha256": "473c4150d7d8a60bbb757e42e05d09655cf7ab56b6318a8a776c77713f12ce83"
+    },
+    {
+      "bytes": 333461,
+      "path": "src/bank_60.cpp",
+      "sha256": "93173b133c4f2b3b2b03dcaca1635e605e4b7eeeed9c65bb219e099e476f750e"
+    },
+    {
+      "bytes": 106517,
+      "path": "src/bank_61.cpp",
+      "sha256": "7270a7b78f35959e493fde3c1c90e7ac81aac35825535583472409bc79b3283f"
+    },
+    {
+      "bytes": 2431156,
+      "path": "src/bank_62.cpp",
+      "sha256": "816a6c7ea809fc26823ee0435dcb167c86e3009b193bb10316035631f48a7998"
+    },
+    {
+      "bytes": 1686395,
+      "path": "src/bank_63.cpp",
+      "sha256": "6cbb075416e4436cea1a3636d2e91274e46438ed93ad40421a7aef6c50996abc"
+    },
+    {
+      "bytes": 954,
+      "path": "src/dispatcher.cpp",
+      "sha256": "b419739854bf5bb8f58c37beb557659407e9337af33d54a68c285145d7599ab5"
+    },
+    {
+      "bytes": 217,
+      "path": "src/unresolved_boundaries.cpp",
+      "sha256": "3104015eadd0148adae95309a66f1a34329be0eabcd008a761c858a40a002c99"
+    },
+    {
+      "bytes": 24186,
+      "path": "translation-manifest.json",
+      "sha256": "83490f70adaab65535cffb2bed0a5c1d642dfc80b8427535c99476f2703037f6"
+    },
+    {
+      "bytes": 553,
+      "path": "unresolved-boundaries.json",
+      "sha256": "30ba54ef2029cda383eac0b3e8d1b25c17a1a375033a226c5e4ffa1fedfdd566"
+    }
+  ],
+  "generator_version": "1.0.0-v13",
+  "manifest_self_excluded_from_tree_hash": true,
+  "milestone": "V13",
+  "ordered_generated_tree_sha256": "d542f502550776a61e890dd87159cc12e033440ebf13733fc782477ef7924494",
+  "payload_file_count": 18,
+  "schema": 1
+}

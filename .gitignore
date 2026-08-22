@@ -1,0 +1,21 @@
+# Local builds and IDE state
+/build/
+/out/
+/.vs/
+/.vscode/
+CMakeUserPresets.json
+
+# User-supplied commercial ROMs and runtime data
+*.nes
+*.sav
+*.state
+settings.ini
+Screenshots/
+Snapshots/
+
+# Local credentials and environment files
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
