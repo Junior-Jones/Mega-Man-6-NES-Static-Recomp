@@ -49,6 +49,8 @@ if(WIN32)
     add_custom_command(TARGET mega-man-6-launcher POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/third_party/SDL-LICENSE.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/SDL-LICENSE.txt"
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/third_party/gamecontrollerdb.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/gamecontrollerdb.txt"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/third_party/SDL_GameControllerDB-LICENSE.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/SDL_GameControllerDB-LICENSE.txt"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/THIRD-PARTY-NOTICES.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/THIRD-PARTY-NOTICES.txt"
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/README.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/README.txt"
         COMMAND "${CMAKE_COMMAND}" -E make_directory "$<TARGET_FILE_DIR:mega-man-6-launcher>/Rom"
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${CMAKE_SOURCE_DIR}/Rom/Readme.txt" "$<TARGET_FILE_DIR:mega-man-6-launcher>/Rom/Readme.txt")
