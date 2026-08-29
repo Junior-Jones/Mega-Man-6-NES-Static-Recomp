@@ -10,8 +10,10 @@ CMakeUserPresets.json
 *.sav
 *.state
 settings.ini
-Screenshots/
-Snapshots/
+Screenshots/*
+!Screenshots/Readme.txt
+Snapshots/*
+!Snapshots/Readme.txt
 
 # Local credentials and environment files
 .env

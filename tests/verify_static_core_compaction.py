@@ -50,7 +50,10 @@ assert compaction["context_count"] == context_count
 assert compaction["helper_count"] == len(helpers)
 assert compaction["identity_dispatch_preserved"] is True
 assert compaction["runtime_opcode_decoder"] is False
-assert compaction["sidecar_sha256"] == hashlib.sha256(sidecar_bytes).hexdigest()
+# The manifest records the canonical LF form produced by the compaction tool.
+# Normalize Windows checkouts before validating the stored audit hash.
+canonical_sidecar_bytes = sidecar_bytes.replace(b"\r\n", b"\n")
+assert compaction["sidecar_sha256"] == hashlib.sha256(canonical_sidecar_bytes).hexdigest()
 
 print(
     "PASS compact core preserves 25,156 explicit identities, 127 fixed helpers, "
