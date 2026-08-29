@@ -1,10 +1,13 @@
-# Generated static core
+# Mega Man 6 generated static translation
 
-This directory contains the fixed, mapper-aware C++ translation used by the
-production build. Each accepted instruction identity is bound to a specialized
-helper. Runtime code never fetches an opcode byte to choose an implementation.
-The dispatcher selects only by physical PRG bank and CPU program counter.
+This is the closed V13 branch-refined, mapper-aware static translation,
+losslessly compacted for release 1.2.0. Every accepted physical PRG-bank
+and CPU-PC identity remains explicit and calls its fixed opcode/mode helper.
+Runtime code does not decode opcode bytes or fall back to an interpreter.
 
-Every wrapper carries its ordered bus-cycle and access plan. Rejected states
-and dispatcher misses call the fail-closed trap path. No commercial ROM image
-is embedded here.
+Flow edges, fail-closed dispatch traps and all 25,156 instruction contexts
+remain compiled. Audit-only ordered bus-plan strings were moved to
+`../analysis/mm6_static_core_compaction.json`; per-identity forwarding
+wrappers were replaced by direct helper calls. The compacted and original
+cores are verified with the same deterministic 4,000-frame trace. No
+commercial ROM is embedded in this source tree.

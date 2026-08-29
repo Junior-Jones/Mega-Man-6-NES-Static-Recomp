@@ -5,15 +5,17 @@
 #include <stdint.h>
 #include <SDL3/SDL.h>
 
-#define MM6_VIDEO_FRAME_WIDTH 256
-#define MM6_VIDEO_FRAME_HEIGHT 240
-#define MM6_VIDEO_FRAME_PIXELS (MM6_VIDEO_FRAME_WIDTH * MM6_VIDEO_FRAME_HEIGHT)
+#define MM6_VIDEO_MAX_WIDTH 256
+#define MM6_VIDEO_HEIGHT 240
+#define MM6_VIDEO_MAX_PIXELS (MM6_VIDEO_MAX_WIDTH * MM6_VIDEO_HEIGHT)
 
 typedef struct MM6VideoOutput {
     SDL_Window *window;
     SDL_Renderer *renderer;
     SDL_Texture *texture;
-    uint32_t pixels[MM6_VIDEO_FRAME_PIXELS];
+    uint32_t pixels[MM6_VIDEO_MAX_PIXELS];
+    int active_width;
+    int active_height;
     int frame_valid;
     int video_initialized;
     int vsync_enabled;
@@ -23,7 +25,8 @@ void mm6_video_output_initialize(MM6VideoOutput *output);
 int mm6_video_output_open(MM6VideoOutput *output, HWND window, int vsync,
     wchar_t *error, size_t error_capacity);
 void mm6_video_output_close(MM6VideoOutput *output);
-int mm6_video_output_submit(MM6VideoOutput *output, const uint8_t *indices);
+int mm6_video_output_submit(MM6VideoOutput *output, const uint8_t *indices,
+    int width, int height);
 int mm6_video_output_present(MM6VideoOutput *output, int integer_scale,
     int correct_aspect);
 

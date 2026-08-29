@@ -6,6 +6,7 @@
 #include <string>
 
 #include "mm6_v05_contract.h"
+#include "mm6_static_core.h"
 
 enum class MM6TrapCode : std::uint16_t {
   None = 0,
@@ -235,7 +236,7 @@ struct MM6ApuState {
   MM6ApuFrameCounterState frame{};
   std::uint64_t cpu_cycle = 0;
   std::uint64_t sample_phase = 0;
-  static constexpr std::uint32_t SampleRate = 48000;
+  static constexpr std::uint32_t SampleRate = MM6_AUDIO_SAMPLE_RATE;
   static constexpr std::uint32_t CpuRateNtsc = 1789773;
   std::array<std::int16_t, 4096> pcm{};
   std::size_t pcm_read = 0;

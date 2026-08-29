@@ -1,0 +1,29 @@
+MEGA MAN 6 1.2.0 - GRAPHICS AND SCREENSHOT UPDATE
+
+The game window continues to use the native 256x240 NES framebuffer. Wide
+Screen is intentionally excluded from version 1.2.0.
+
+Previous screenshot behavior rebuilt a separate BGRA image from the core after
+presentation. That path could differ from the indexed frame submitted to the
+window, used a different palette, and wrote colour channels in the wrong order
+for the BMP format.
+
+Version 1.2.0 keeps a copy of the exact indexed framebuffer accepted by the
+video output and converts that displayed frame with the same frontend palette.
+F8 therefore captures what the app actually shows. BMP channel order is now
+correct.
+
+Screenshot output also now:
+
+- creates and validates the portable Screenshots folder before writing;
+- uses millisecond timestamps plus a numeric collision suffix;
+- creates new files without overwriting an existing capture;
+- checks header and pixel writes; and
+- deletes a partial file when a write fails.
+
+WM_PAINT and WM_SIZE handling redraws the retained frame during window moves,
+resizes and exposure, avoiding transient stale or black presentation.
+
+The ROM-independent screenshot source contract verifies exact submitted-frame
+capture, shared palette use, collision-safe naming and checked writes. The
+Release build and all local ROM-backed tests pass with these changes.

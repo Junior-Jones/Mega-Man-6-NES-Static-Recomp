@@ -5,7 +5,7 @@
 #include <windows.h>
 #include <stddef.h>
 
-#define MM6_NES_PLAYER_COUNT 2
+#define MM6_NES_PLAYER_COUNT 1
 #define MM6_NES_BINDING_COUNT 8
 #define MM6_INPUT_KEYBOARD 0
 #define MM6_INPUT_GAMEPAD 1
@@ -33,6 +33,7 @@ struct MM6LiveSettings {
 
 void mm6_windows_live_settings_defaults(MM6LiveSettings *settings);
 void mm6_windows_live_set_next_settings(const MM6LiveSettings *settings);
+void mm6_windows_live_set_volume(int volume_percent);
 bool mm6_windows_live_start(HWND owner, const wchar_t *rom_path,
     wchar_t *error_text, size_t error_text_count);
 void mm6_windows_live_stop(void);
@@ -46,6 +47,7 @@ bool mm6_windows_live_quick_load(void);
 bool mm6_windows_live_take_screenshot(void);
 bool mm6_windows_live_is_running(void);
 bool mm6_windows_live_is_paused(void);
+HWND mm6_windows_live_window(void);
 #endif
 
 #endif

@@ -14,6 +14,17 @@
     62,
     63
   ],
+  "compaction": {
+    "compact_bank_source_bytes": 10096182,
+    "compiled_ordered_bus_plans": false,
+    "context_count": 25156,
+    "helper_count": 127,
+    "identity_dispatch_preserved": true,
+    "original_bank_source_bytes": 18304011,
+    "runtime_opcode_decoder": false,
+    "sidecar": "../analysis/mm6_static_core_compaction.json",
+    "sidecar_sha256": "e5d3e783150f0103745a9105fad63486522dd83ef80ba8c5316d10376d109343"
+  },
   "dispatcher_policy": "physical bank + CPU PC only; every miss calls mm6_trap_dispatch_miss",
   "edge_count": 32511,
   "exact_arguments": [

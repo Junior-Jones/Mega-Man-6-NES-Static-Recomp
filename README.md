@@ -1,4 +1,4 @@
-# Mega Man 6 (NES) Static Recomp 1.1.0
+# Mega Man 6 (NES) Static Recomp 1.2.0
 
 This is the production Windows source package for a fail-closed static
 recompilation of the exact Mega Man 6 (USA) NES cartridge. The commercial ROM
@@ -27,20 +27,26 @@ The executable and runtime files are written to `build/release`.
 ## Runtime use
 
 Place a legally supplied `Mega Man 6 (USA).nes` in the `Rom` folder beside
-`Launcher.exe`, or select it with Browse ROM. See `ROM-REQUIREMENTS.txt` for the
-accepted file and payload hashes.
+`Launcher.exe`, or select it with Browse ROM. The launcher accepts only the exact
+supported ROM, which is not included.
 
-The accessible Win32 launcher provides keyboard and gamepad controls, SDL3
-video and audio, windowed and full-screen play, scaling, pause/resume,
-snapshots, screenshots, and keyboard shortcuts. Press F1 for the complete
-control and shortcut guide.
+The accessible single-player Win32 launcher provides keyboard and gamepad
+controls, SDL3 video and audio, windowed and full-screen play, scaling,
+pause/resume, snapshots, exact-framebuffer screenshots, and keyboard
+shortcuts. Press F1 for the Welcome and shortcut guide. Frontend choices and
+the remembered ROM folder are stored in one portable `settings.ini` file.
 
 ## Source layout
 
 - `src/gui`: Windows launcher, ROM validation, video, and audio integration
 - `runtime/core`: static-core runtime and public API
-- `generated/static-core`: generated fixed game translation
+- `generated/static-core`: compact generated fixed game translation
+- `generated/analysis`: offline compaction audit sidecar
+- `tools`: deterministic static-core compaction utility
 - `third_party`: gamepad helper, SDL license, and controller database
 
-The runtime contains no opcode interpreter or emulator fallback. Unsupported
-states fail closed. No commercial ROM data is stored in this source package.
+The compact runtime keeps all 25,156 explicit bank-and-address identities and
+127 fixed semantic helpers. It contains no opcode interpreter, runtime opcode
+decoder, or emulator fallback. Unsupported states fail closed. A deterministic
+4,000-frame comparison matches the uncompacted authority for frame, audio and
+snapshot output. No commercial ROM data is stored in this source package.

@@ -1,100 +1,100 @@
 {
   "files": [
     {
-      "bytes": 713,
-      "path": "README.md",
-      "sha256": "8f26a296703e5c6d5620096a18885f2820588a8058de617afb2d909431a531b7"
-    },
-    {
-      "bytes": 12937,
+      "bytes": 13122,
       "path": "include/mm6_v05_contract.h",
-      "sha256": "2d09ec1e4489e11f518ef947005d7e81dc81df1c23a70b6a08823bc200cad21d"
+      "sha256": "6d1b23fc19b8eaf582c01deb0d82947d1e02dbe3124cf0de4255c2c9a761f852"
     },
     {
-      "bytes": 2082965,
+      "bytes": 744,
+      "path": "README.md",
+      "sha256": "23c67afcf9bec903e2ba35ba84060e864ca94bc2f887773d1bf9d3039391b508"
+    },
+    {
+      "bytes": 1156206,
       "path": "src/bank_41.cpp",
-      "sha256": "aa89c810242ba6ae7359468a0d3b76dd50b016b033eda2a080d98b528b372168"
+      "sha256": "6ea2d7eecdc028e768372eb3dd08b7c467561dc7e2fece29a43aa1cabf67bc54"
     },
     {
-      "bytes": 2188861,
+      "bytes": 1219152,
       "path": "src/bank_48.cpp",
-      "sha256": "bf83d77a1921a127d592eb8a2e46746618be57782f7779a55d0ebea5897761ff"
+      "sha256": "eb7111a6ee6d431eb495171643e1cc565b08df462edd301c9921b476698b24c6"
     },
     {
-      "bytes": 2097539,
+      "bytes": 1174144,
       "path": "src/bank_49.cpp",
-      "sha256": "0a16721bdc11c1d4e7a228cd8733f8fe0c31798f291f7cc786f7ac0eaff90c56"
+      "sha256": "33aa39a2d0cd14a849cb28c61d8f21cc07ecded5637232d0d8b228ebd1e86e84"
     },
     {
-      "bytes": 788369,
+      "bytes": 445560,
       "path": "src/bank_52.cpp",
-      "sha256": "aae4480c55d9bc797dc8206b7e2113b992de4409202b6fc0699ffc5a91f7d328"
+      "sha256": "b8c3e22c8dcfbd3c59f8285fe9f5f2a37fcf892ba1e6007cb9c84cfa236138b8"
     },
     {
-      "bytes": 2232280,
+      "bytes": 1261654,
       "path": "src/bank_56.cpp",
-      "sha256": "db9097ab0e0e69b59b051e75cdc9627f428f3cc7b56c27ce02624108392f0652"
+      "sha256": "6f660d0e8e6e31256ebcc79498ab1c036090c82086a4d43aa6b9e278d3cec83b"
     },
     {
-      "bytes": 1653795,
+      "bytes": 930538,
       "path": "src/bank_57.cpp",
-      "sha256": "f2ac4a52339a4c2b5f62673782e10dfe616497814eb40ce4acd122b9599f7d40"
+      "sha256": "36cb1df31c5982726cc959b2b656622977bd3ad57ca4912cbc207829e8350c38"
     },
     {
-      "bytes": 213529,
+      "bytes": 119466,
       "path": "src/bank_58.cpp",
-      "sha256": "228ca878b795bbe001d8d465b0678dbd3db51b726f387b4409b1992373d7b374"
+      "sha256": "996af440514730b083528ca853a16e6e051932cd3a472ba0aa24f7efd2d0fe57"
     },
     {
-      "bytes": 2110225,
+      "bytes": 1183070,
       "path": "src/bank_59.cpp",
-      "sha256": "473c4150d7d8a60bbb757e42e05d09655cf7ab56b6318a8a776c77713f12ce83"
+      "sha256": "83f723af1a6859d725d2bacfcb2a676fbffcd0adb5a3b92b8435b4ca64d1fd6e"
     },
     {
-      "bytes": 333461,
+      "bytes": 187761,
       "path": "src/bank_60.cpp",
-      "sha256": "93173b133c4f2b3b2b03dcaca1635e605e4b7eeeed9c65bb219e099e476f750e"
+      "sha256": "b8c5fd997336d203cb90f4bf69b8e081eb1a7f3cad02631c681f3d12c3020376"
     },
     {
-      "bytes": 106517,
+      "bytes": 60712,
       "path": "src/bank_61.cpp",
-      "sha256": "7270a7b78f35959e493fde3c1c90e7ac81aac35825535583472409bc79b3283f"
+      "sha256": "649daca21917913fe127493000bdd0ee69156f890455998fcb9a15243c8e036f"
     },
     {
-      "bytes": 2431156,
+      "bytes": 1380202,
       "path": "src/bank_62.cpp",
-      "sha256": "816a6c7ea809fc26823ee0435dcb167c86e3009b193bb10316035631f48a7998"
+      "sha256": "8c507a06e644f50079bf4bd72b69cd85e04bd3226c21ea16c6a77d21477c83e8"
     },
     {
-      "bytes": 1686395,
+      "bytes": 977717,
       "path": "src/bank_63.cpp",
-      "sha256": "6cbb075416e4436cea1a3636d2e91274e46438ed93ad40421a7aef6c50996abc"
+      "sha256": "1b76857764036185dec2a101205c9da5f1d173cfd49adf24112fb4eea6ddcd00"
     },
     {
-      "bytes": 954,
+      "bytes": 974,
       "path": "src/dispatcher.cpp",
-      "sha256": "b419739854bf5bb8f58c37beb557659407e9337af33d54a68c285145d7599ab5"
+      "sha256": "cba9d22cdbb7f2e8844dbd26710f1310ec8220f9c17a4dde6ee6de464f7d5b15"
     },
     {
-      "bytes": 217,
+      "bytes": 224,
       "path": "src/unresolved_boundaries.cpp",
-      "sha256": "3104015eadd0148adae95309a66f1a34329be0eabcd008a761c858a40a002c99"
+      "sha256": "72f75752587ff746a5ac7936136d761ae7e03ffd4fbc17265f642d2ee5647f4c"
     },
     {
-      "bytes": 24186,
+      "bytes": 24619,
       "path": "translation-manifest.json",
-      "sha256": "83490f70adaab65535cffb2bed0a5c1d642dfc80b8427535c99476f2703037f6"
+      "sha256": "4d07deadfa54c8d3054a4025ad1719e5b0682dd5f5353970041ff6be5f631169"
     },
     {
-      "bytes": 553,
+      "bytes": 565,
       "path": "unresolved-boundaries.json",
-      "sha256": "30ba54ef2029cda383eac0b3e8d1b25c17a1a375033a226c5e4ffa1fedfdd566"
+      "sha256": "e8e18ba358526869c4f773d94548e301c8f7c518c3bcb9106f558522119a70ba"
     }
   ],
   "generator_version": "1.0.0-v13",
   "manifest_self_excluded_from_tree_hash": true,
   "milestone": "V13",
-  "ordered_generated_tree_sha256": "d542f502550776a61e890dd87159cc12e033440ebf13733fc782477ef7924494",
+  "ordered_generated_tree_sha256": "be66e27301f7aba2a0c06034094afa219924d9a0e32d48d990926167895be18d",
   "payload_file_count": 18,
   "schema": 1
 }

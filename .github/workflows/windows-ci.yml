@@ -30,3 +30,6 @@ jobs:
       - name: Build Release
         run: cmake --build "$env:RUNNER_TEMP\\static-recomp-build" --config Release --parallel
 
+      - name: Run source and frontend contract tests
+        run: ctest --test-dir "$env:RUNNER_TEMP\\static-recomp-build" -C Release --output-on-failure
+

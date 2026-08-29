@@ -9,6 +9,7 @@ extern "C" {
 #define MM6_FRAME_WIDTH 256u
 #define MM6_FRAME_HEIGHT 240u
 #define MM6_FRAME_PIXELS (MM6_FRAME_WIDTH * MM6_FRAME_HEIGHT)
+#define MM6_AUDIO_SAMPLE_RATE 48000u
 #define MM6_NES_ROM_BYTES 524304u
 
 typedef struct MM6StaticCore MM6StaticCore;
